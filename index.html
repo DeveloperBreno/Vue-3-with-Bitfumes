@@ -1,0 +1,26 @@
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+<ul id="example-1" class="list-group">
+    <li v-for="item in items" :key="item.message" class="list-group-item">
+      {{ item.message }}
+    </li>
+  </ul>
+
+  <script>  
+
+var example1 = new Vue({
+  el: '#example-1',
+  data: {
+    items: [
+      { message: 'Algo' },
+      { message: 'Outro' }
+    ]
+  }
+})
+
+//example1.items.push({message: 'breno'})
+//example1.items.pop()
+
+</script>
+
