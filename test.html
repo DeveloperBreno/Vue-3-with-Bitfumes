@@ -13,14 +13,20 @@ var example1 = new Vue({
   el: '#example-1',
   data: {
     items: [
-      { message: 'Algo' },
-      { message: 'Outro' }
+      { id: 1, message: 'Algo' },
+      { id: 2, message: 'Outro' }
     ]
   }
 })
 
+// add
 //example1.items.push({message: 'breno'})
+
+// remove lest
 //example1.items.pop()
+
+// remove with condition
+//example1.items = example1.items.filter((e)=>e.id !== 1 )
 
 </script>
 
